@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shriram Fabrics | Factory Direct</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #fdfdfd; text-align: center; color: #333; }
+        
+        .hero { background: #b22222; color: white; padding: 40px 20px; }
+        .hero h1 { font-size: 38px; margin: 0; text-transform: uppercase; }
+        
+        .contact-section { background: #333; padding: 20px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; border-bottom: 4px solid #ffd700; }
+        .contact-card { background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; border: 1px solid #ffd700; width: 280px; }
+        .contact-card h3 { color: #ffd700; margin: 5px 0; font-size: 16px; text-transform: uppercase; }
+        .btn-call { background: #007bff; color: white; text-decoration: none; padding: 10px; border-radius: 5px; display: inline-block; margin: 5px; font-weight: bold; width: 110px; }
+        .btn-wa { background: #25D366; color: white; text-decoration: none; padding: 10px; border-radius: 5px; display: inline-block; margin: 5px; font-weight: bold; width: 110px; }
+
+        .delivery-banner { background: #ffd700; color: #000; padding: 15px; font-weight: bold; font-size: 22px; text-transform: uppercase; }
+
+        .brand-grid { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; padding: 20px; background: #fff; }
+        .brand-box { border: 2px solid #b22222; padding: 10px 20px; border-radius: 5px; font-weight: bold; color: #b22222; min-width: 120px; text-transform: uppercase; }
+
+        /* Gallery - Badi Size 750px */
+        .gallery { padding: 20px; max-width: 750px; margin: 0 auto; } 
+        .photo-item { background: white; margin-bottom: 30px; border-radius: 12px; overflow: hidden; border: 3px solid #b22222; box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
+        .photo-item img { width: 100%; height: auto; display: block; max-height: 800px; object-fit: contain; }
+        .photo-label { background: #b22222; color: white; padding: 12px; font-weight: bold; text-transform: uppercase; font-size: 16px; }
+
+        .footer-simple { background: #222; color: white; padding: 40px 20px; border-top: 5px solid #b22222; margin-top: 40px; }
+        .footer-simple h2 { color: #ffd700; margin-bottom: 15px; }
+        .footer-simple p { font-size: 18px; margin: 5px 0; }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>SHRIRAM FABRICS</h1>
+        <p>Complete Uniform Solutions & Wholesale Hub</p>
+    </div>
+
+    <div class="contact-section">
+        <div class="contact-card">
+            <h3>Kaushal Singh Panwar</h3>
+            <a href="tel:8770988390" class="btn-call">📞 CALL</a>
+            <a href="https://wa.me/918770988390" class="btn-wa">💬 WHATSAPP</a>
+        </div>
+        <div class="contact-card">
+            <h3>Pradeep Bhasme</h3>
+            <a href="tel:9130964745" class="btn-call">📞 CALL</a>
+            <a href="https://wa.me/919130964745" class="btn-wa">💬 WHATSAPP</a>
+        </div>
+    </div>
+
+    <div class="delivery-banner">🚚 ALL OVER INDIA DELIVERY AVAILABLE</div>
+
+    <div class="brand-grid">
+        <div class="brand-box">Mafatlal</div>
+        <div class="brand-box">Raymond</div>
+        <div class="brand-box">Linen</div>
+        <div class="brand-box">Arvind</div>
+        <div class="brand-box">Siyaram</div>
+    </div>
+
+    <div class="gallery">
+        <div class="photo-item"><div class="photo-label">Premium Collection</div><img src="{{ url_for('static', filename='istockphoto-1917072309-612x612.jpg') }}"></div>
+        <div class="photo-item"><div class="photo-label">Fabric Varieties</div><img src="{{ url_for('static', filename='Fabric-Types-1000x580.jpg') }}"></div>
+        
+        <div class="photo-item"><div class="photo-label">Brand Logos</div><img src="{{ url_for('static', filename='all logo.jpg') }}"></div>
+        <div class="photo-item"><div class="photo-label">Premium Thaan Fabric</div><img src="{{ url_for('static', filename='fabric.jpg') }}"></div>
+        <div class="photo-item"><div class="photo-label">Siyaram Shirting</div><img src="{{ url_for('static', filename='multi-color-siyarams-shirting-fabrics.jpeg') }}"></div>
+        <div class="photo-item"><div class="photo-label">Latest Stock</div><img src="{{ url_for('static', filename='WhatsApp Image 2026-03-04 at 12.37.30 PM.jpeg') }}"></div>
+        <div class="photo-item"><div class="photo-label">Wholesale Bulk</div><img src="{{ url_for('static', filename='uniforms4.webp') }}"></div>
+        <div class="photo-item"><div class="photo-label">School Design</div><img src="{{ url_for('static', filename='Uniform3.webp') }}"></div>
+        <div class="photo-item"><div class="photo-label">Our Shop View</div><img src="{{ url_for('static', filename='shop.jpeg') }}"></div>
+        <div class="photo-item"><div class="photo-label">Standard Uniform</div><img src="{{ url_for('static', filename='school-uniform.jpg') }}"></div>
+        <div class="photo-item"><div class="photo-label">Premium Pants</div><img src="{{ url_for('static', filename='School-Pant-057A9008-v1-1-scaled.jpg') }}"></div>
+        <div class="photo-item"><div class="photo-label">Mafatlal Specialist</div><img src="{{ url_for('static', filename='school uniform.webp') }}"></div>
+        <div class="photo-item"><div class="photo-label">Kids Collection</div><img src="{{ url_for('static', filename='kids-school-uniform.jpg') }}"></div>
+        <div class="photo-item"><div class="photo-label">Raymond Selection</div><img src="{{ url_for('static', filename='71IVoNtqmFL._AC_UY350_.jpg') }}"></div>
+        <div class="photo-item"><div class="photo-label">12 Year Boy Special</div><img src="{{ url_for('static', filename='01_12year_boy.webp') }}"></div>
+    </div>
+
+    <div class="footer-simple">
+        <h2>SHRIRAM FABRICS</h2>
+        <p><b>Kaushal Singh Panwar:</b> 8770988390</p>
+        <p><b>Pradeep Bhasme:</b> 9130964745</p>
+        <p style="color: #ffd700; font-weight: bold; margin-top: 20px;">📦 ALL OVER INDIA DELIVERY AVAILABLE</p>
+    </div>
+
+</body>
+</html>
